@@ -1,0 +1,97 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} 
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+\usepackage{fontawesome}
+\usepackage{multicol}
+\usepackage{hyperref}
+
+\hypersetup{
+hidelinks,
+colorlinks=true,
+allcolors=black,
+pdfstartview=Fit,
+breaklinks=true
+}
+
+\newcommand{\faBox}[2][c]{%
+   \makebox[0.8em][#1]{%
+      \csname fa#2\endcsname
+   }%
+}
+
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{吴世涵}
+
+\contactInfo{电子科技大学}{计算机科学与工程学院}{计算机科学与技术}{}
+\contactInfo{\faHome\ \href{https://koorye.github.io}{koorye.github.io}}{\faEnvelope\ \href{mailto:shihan.wu.koorye@outlook.com}{shihan.wu.koorye@outlook.com}}{\faLink\ \href{https://koorye.github.io/blog}{koorye.github.io/blog}}{}
+
+
+\section{\faBox[c]{User} 个人简介}
+
+我叫吴世涵，是来自\textbf{电子科技大学计算机科学与工程学院}的\textbf{硕士研究生}，我的研究领域是\textbf{视觉语言模型、迁移学习和机器人学}。我已经发表了2篇\textbf{视觉语言模型领域的CCF-A类}会议论文，目前正在进行关于\textbf{机器人视觉语言动作模型的测试时适应和上下文学习}的相关研究。
+
+\section{\faBox[c]{GraduationCap} 教育背景}
+
+\datedsubsection{\textbf{电子科技大学} · 计算机科学与技术 · \textit{全日制学术硕士}}{2023.9-2026.6}
+\textbf{绩点}：3.94/4.0 \quad \textbf{学院排名}：6/454\ (1.3\%) \quad \textbf{平均成绩}：89 \\
+获\textbf{“国家奖学金”}、\textbf{“学业一等奖学金”}、\textbf{“新生一等奖学金”}等荣誉 \\
+获\textbf{“‘学术青苗’优秀研究生”}等荣誉
+
+\datedsubsection{\textbf{电子科技大学} · 软件工程 · \textit{工学学士}}{2019.9-2023.6}
+\textbf{绩点}: 3.94/4.0 \quad \textbf{专业排名}: 18/181\ (10\%) \quad \textbf{平均成绩}：90 \quad \textbf{四六级成绩}：579/467 \\
+获\textbf{“‘世强’专项奖学金”}、\textbf{“优秀学生奖学金”}等荣誉 \\
+获\textbf{“电子科技大学‘优秀毕业生’”}、\textbf{“荣誉研究”}等荣誉 
+
+
+\section{\faBox[c]{LightbulbO} 科研论文}
+
+\datedsubsection{\textbf{(CCF-A) CVPR 2025 第一作者}}{2025.3}
+\textit{Skip Tuning: Pre-trained Vision-Language Models are Effective and Efficient Adapters Themselves} \\
+\textbf{关键词}：视觉语言模型 · 迁移学习 · 效率优化
+
+\datedsubsection{\textbf{(CCF-A) CVPR 2024 共同第一作者}}{2024.2}
+\textit{DePT: Decoupled Prompt Tuning} \\
+\textbf{关键词}：视觉语言模型 · 迁移学习 · 解耦学习 · 提示调优
+
+
+\section{\faBox[c]{Cogs} 科研专利}
+
+\datedline{\textbf{申请专利 · 学生第二发明人}\quad 视觉语言模型的微调方法}{2025.2}
+\datedline{\textbf{申请专利 · 学生第一发明人}\quad 基于低频增强的小样本图像分类迁移方法}{2024.8}
+
+
+\section{\faBox[c]{FlagCheckered} 竞赛经历}
+
+\datedline{\textbf{省部级二等奖}\ “挑战杯”四川省大学生创业计划竞赛}{2022.6}
+\datedline{\textbf{国家级三等奖}\quad 中国国际“互联网+”大学生创新创业大赛}{2021.12}
+\datedline{\textbf{省部级一等奖}\quad 中国成都国际软件设计和应用竞赛}{2021.10}
+\datedline{\textbf{省部级二等奖}\quad 中国大学生数学建模竞赛}{2021.9}
+\datedline{\textbf{国家级三等奖}\quad 美国大学生数学建模大赛}{2021.4}
+
+
+\section{\faBox[c]{Coffee} 项目经历}
+
+\datedline{\textbf{某雷达信号检测项目}\quad 特征提取网络、开集检测等算法设计}{2024.3-2024.7}
+\datedline{\textbf{智能安全驾驶监测系统}\quad 数据库、分布式后端设计、容器化服务部署}{2022.4-2022.8}
+\datedline{\textbf{“FACE ME”智能美妆平台}\quad 人脸打分、好友推荐等算法设计}{2021.10-2022.4}
+
+
+\section{\faBox[c]{CodeFork} 个人技能}
+
+熟练掌握\textbf{Pytorch、Keras}等深度学习框架 \\
+熟悉常用的机器学习算法、传统计算机视觉技术，如\textbf{SVM、GMM、HOG、SIFT}等 \\
+熟悉流行的大语言模型和视觉语言模型与训练策略，如\textbf{LLaMa、CLIP、LLaVa}等 \\
+熟悉常用的大模型微调策略，如\textbf{Prompt Tuning、LoRA}等 \\
+熟悉机器人视觉语言动作模型与模仿学习策略，如\textbf{Octo、OpenVLA、Pi0}等 \\
+正在进行机器人视觉语言动作模型的\textbf{测试时适应、上下文学习}的相关研究 \\
+擅长前后端开发(\textbf{Vue/Java})、数据库(\textbf{MySQL/Redis})、移动端开发(\textbf{UniAPP})、游戏开发(\textbf{Unity 3D})等 \\
+
+\end{document}
